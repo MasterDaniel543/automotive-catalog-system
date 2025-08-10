@@ -1,0 +1,458 @@
+.opinions-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--grayo);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.opinions-container h2 {
+  color: var(--graya);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+}
+
+.opinion-form {
+  background-color: #2a2b36; /* Tono más claro que --grayo para contraste */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--graya);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Modificar el estilo del input de usuario para mejorar la visibilidad */
+.user-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde más visible */
+  border-radius: 6px;
+  background-color: #3a3b46; /* Fondo más claro para mejor contraste */
+  color: white; /* Texto blanco para máxima visibilidad */
+  font-weight: 600; /* Texto más grueso */
+  transition: all 0.3s ease;
+}
+
+/* Opcional: Añadir un estilo específico solo para el campo de usuario */
+.form-group:first-of-type .user-input {
+  background-color: #444552; /* Fondo aún más claro solo para el campo de usuario */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Borde más visible */
+}
+
+.user-input:focus {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  resize: vertical;
+  background-color: var(--grayo);
+  color: var(--graya);
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+  outline: none;
+}
+
+.file-input {
+  margin: 15px 0;
+  width: 100%;
+  padding: 10px;
+  color: var(--graya);
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d32f2f; /* Rojo más moderno */
+  color: var(--graya);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #b71c1c; /* Rojo más oscuro al hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(183, 28, 28, 0.3);
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.opinions-content {
+  display: grid;
+  gap: 20px;
+}
+
+.opinion-card {
+  background-color: #2a2b36; /* Tono más claro que --grayo */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.opinion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.opinion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.opinion-header h4 {
+  margin: 0;
+  color: var(--graya);
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.opinion-date {
+  color: rgba(237, 237, 237, 0.7); /* Versión más suave de --graya */
+  font-size: 0.9em;
+}
+
+.opinion-card p {
+  color: var(--graya);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.opinion-card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-prompt {
+  text-align: center;
+  padding: 25px;
+  background: #2a2b36;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  max-width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.login-prompt p {
+  margin-bottom: 20px;
+  color: var(--graya);
+  font-size: 1.1em;
+}
+
+.login-prompt button {
+  padding: 12px 24px;
+  background-color: #d32f2f;
+  color: var(--graya);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.login-prompt button:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(183, 28, 28, 0.3);
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #2a2b36;
+  color: var(--graya);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+}
+
+.search-bar input::placeholder {
+  color: rgba(237, 237, 237, 0.5);
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+  color: var(--graya);
+  grid-column: 1 / -1;
+  background-color: #2a2b36;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-section {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 18px;
+  background-color: #d32f2f !important; /* Añadido !important para asegurar que se aplique inmediatamente */
+  color: var(--graya);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  /* Sin transición ni animaciones */
+}
+
+.back-button:hover {
+  background-color: #d32f2f !important; /* Mismo color que el estado normal */
+  /* Sin transformaciones ni sombras */
+}
+
+.header-section h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--graya);
+}
+
+@media (max-width: 768px) {
+  .opinions-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .opinion-form {
+    padding: 15px;
+  }
+
+  .opinion-card {
+    padding: 15px;
+  }
+}
+
+.read-more-btn {
+  background: none;
+  border: 2px solid #d32f2f;
+  color: #d32f2f;
+  cursor: pointer;
+  padding: 6px 16px;
+  font-size: 0.9em;
+  width: auto;
+  text-align: center;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(211, 47, 47, 0.1);
+}
+
+.read-more-btn:hover {
+  background: #d32f2f;
+  color: var(--graya);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2);
+}
+
+.opinion-card p {
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.6;
+}
+
+.opinion-card p.expanded {
+  max-height: none;
+}
+
+.opinion-card p:not(.expanded) {
+  max-height: 100px;
+}
+
+.opinion-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.toggle-form-button {
+  background-color: #3f51b5; /* Azul más moderno */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(63, 81, 181, 0.3);
+}
+
+.toggle-form-button:hover {
+  background-color: #303f9f; /* Azul más oscuro */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(63, 81, 181, 0.4);
+}
+
+.opinion-filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.opinion-filter-buttons button {
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #2a2b36;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  max-width: 200px;
+}
+
+.opinion-filter-buttons button.active-filter {
+  background-color: #3f51b5; /* Azul más moderno */
+  color: white;
+  border-color: #3f51b5;
+  box-shadow: 0 2px 6px rgba(63, 81, 181, 0.3);
+}
+
+.opinion-filter-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.opinion-destacada {
+  border: 2px solid #ffc107;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.opinion-destacada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent #ffc107 transparent transparent;
+  z-index: 1;
+}
+
+.destacada-badge {
+  background-color: #ffc107;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3);
+  display: inline-flex;
+  align-items: center;
+}
+
+.destacada-badge::before {
+  content: '★';
+  margin-right: 4px;
+}
+
+/* Estilo para el checkbox de filtro */
+.opinion-filter {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: var(--graya);
+  background-color: #2a2b36;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-checkbox:hover {
+  background-color: #333440;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filter-checkbox input {
+  margin-right: 8px;
+  cursor: pointer;
+}

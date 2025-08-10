@@ -1,0 +1,385 @@
+/* FONT IMPORTING */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --grayo: #1f2029;
+    --graya: #ededed;
+    --gray: #ededed;
+}
+
+header {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: var(--grayo);
+    padding: 20px 0;
+}
+
+.content {
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: clamp(20px, 3vw, 24px);
+    color: var(--graya);
+    cursor: pointer;
+}
+
+nav p a {
+    text-decoration: none;
+    color: var(--graya);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--graya);
+    text-decoration: none;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+nav ul li a:hover {
+    color: #c50808;
+}
+
+nav ul button {
+    border: 1px solid var(--graya);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--graya);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+nav ul button:hover {
+    transition: background, color 0.6s;
+    background: var(--graya);
+    color: var(--grayo);
+}
+
+.content .header-block {
+    width: 100%;
+    min-height: 450px;
+    background: var(--graya);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: clamp(15px, 3vw, 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-block .text {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+.header-block .text h2 {
+    color: var(--grayo);
+    margin-bottom: clamp(15px, 3vw, 25px);
+    font-size: clamp(1.8em, 4vw, 2.5em);
+    line-height: 1.2;
+}
+
+.header-block .text p {
+    color: var(--grayo);
+    font-size: clamp(1em, 2vw, 1.2em);
+    line-height: 1.5;
+    max-width: clamp(280px, 80%, 400px);
+    margin: 0 auto;
+}
+
+.carousel-container {
+    width: 90%;
+    max-width: 800px;
+    height: 280px;
+    margin: 20px auto;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.slick-slider, 
+.slick-list, 
+.slick-track,
+.slick-slide,
+.slick-slide > div {
+    height: 100%;
+}
+
+.slick-dots {
+    bottom: -25px;
+}
+
+.slick-dots li button:before {
+    color: var(--graya);
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--graya);
+    opacity: 1;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: var(--graya);
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(237, 237, 237, 0.8);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: rgba(237, 237, 237, 0.8);
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+
+.hamburger.open {
+    background-color: transparent;
+}
+
+.hamburger.open::before {
+    transform: rotate(45deg);
+}
+
+.hamburger.open::after {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 450px;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 100;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(31, 32, 41, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+
+    nav ul.active {
+        display: flex;
+        right: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul button {
+        margin: 0;
+    }
+
+    .carousel-container {
+        width: 95%;
+        height: 220px;
+    }
+    
+    .carousel-container img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        min-height: 400px;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    .content .header-block {
+        padding: 15px;
+        min-height: 350px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .carousel-container img {
+        height: 180px;
+    }
+}
+
+/* Add these styles after your existing carousel styles */
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    color: var(--grayo);
+    opacity: 0.8;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .slick-prev {
+        left: 10px;
+    }
+    
+    .slick-next {
+        right: 10px;
+    }
+}
+
+/* ... existing styles ... */
+
+.user-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.user-menu span {
+    color: white;
+    font-weight: 500;
+}
+
+.user-menu .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.user-menu .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logout-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+

@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--grayo);
+  color: var(--graya);
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--graya);
+}
+
+.creator {
+  font-weight: bold;
+  color: #c50808;
+}

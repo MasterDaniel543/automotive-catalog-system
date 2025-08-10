@@ -1,0 +1,45 @@
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --text-light: #666666;
+    --primary-color: #4a90e2;
+    --primary-dark: #357abd;
+    --secondary-color: #f5f5f5;
+    --border-color: #e0e0e0;
+    --hover-color: #357abd;
+    --card-bg: #ffffff;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.light-theme {
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --text-light: #666666;
+    --primary-color: #4a90e2;
+    --primary-dark: #357abd;
+    --secondary-color: #f5f5f5;
+    --border-color: #e0e0e0;
+    --hover-color: #357abd;
+    --card-bg: #ffffff;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+.light-theme * {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
