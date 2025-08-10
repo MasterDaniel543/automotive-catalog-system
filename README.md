@@ -24,17 +24,23 @@ Sistema web seguro para la gestión de usuarios, roles y catálogos jerárquicos
 - MongoDB
 
 ## Estructura del Proyecto
-├── frontend/          # Aplicación React
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   └── ...
-│   └── package.json
-├── backend/           # API Node.js
-│   ├── models/
-│   ├── uploads/
-│   └── server.js
-└── README.md
+frontend/          # Aplicación React
+    src/
+        components/
+        context/
+        pages/
+        utils/
+        App.js
+        index.js
+    package.json
+
+backend/           # API Node.js
+    models/
+    uploads/
+    controllers/
+    routes/
+    server.js
+README.md
 
 
 ## Instalación y Configuración
