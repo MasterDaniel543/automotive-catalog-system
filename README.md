@@ -34,7 +34,7 @@ frontend/
         App.js
         index.js
     package.json
-    
+
 API Node.js:
 backend/
     models/
@@ -77,6 +77,7 @@ npm start
 - ✅ Carga de imágenes
 
 ## Contribución
+Estructura de el proyecto:
 
 1. Fork el proyecto
 2. Crea una rama feature (`git checkout -b feature/nueva-funcionalidad`)
