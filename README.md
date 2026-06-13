@@ -68,13 +68,13 @@ npm start
 
 ## Funcionalidades
 
-- ✅ Autenticación y autorización con JWT
-- ✅ Gestión de usuarios (CRUD)
-- ✅ Roles: Administrador, Usuario Estándar
-- ✅ Catálogo de vehículos (marcas/modelos)
-- ✅ Sistema de opiniones
-- ✅ Panel de administración
-- ✅ Carga de imágenes
+- Autenticación y autorización con JWT
+-  Gestión de usuarios (CRUD)
+-  Roles: Administrador, Usuario Estándar
+-  Catálogo de vehículos (marcas/modelos)
+-  Sistema de opiniones
+-  Panel de administración
+-  Carga de imágenes
 
 ## Contribución
 Estructura de el proyecto:
